@@ -675,7 +675,7 @@ export const InputNumber = React.memo(
         };
 
         const isDecimalSign = (char) => {
-            if (_decimal.current.test(char) || isFloat(char)) {
+            if (_decimal.current.test(char)) {
                 _decimal.current.lastIndex = 0;
 
                 return true;
